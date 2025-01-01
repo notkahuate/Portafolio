@@ -420,7 +420,7 @@
 }
 
 @media (max-width: 768px) {
-    .skills-grid {
+    .about_me .skills-grid {
         grid-template-columns: 1fr;
     }
 }
