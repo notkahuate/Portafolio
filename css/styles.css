@@ -419,7 +419,7 @@
     font-size: 1.125rem;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .about_me .skills-grid {
         grid-template-columns: 1fr;
     }
