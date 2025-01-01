@@ -369,10 +369,16 @@
     }
 }
 
-.about_me .container {
-    max-width: 100%;
-    margin: 0 auto;
+.about_me{
     background-color: black;
+    width: 100%;
+}
+
+.about_me .container {
+    
+    margin-right: 2vh;
+    background-color: black;
+
 }
 
 .about_me .title {
@@ -380,17 +386,20 @@
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 3rem;
+    margin-left: 10vh;
    
 }
 
 .about_me .title span {
     font-weight: bold;
+
 }
 
 .about_me .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    margin-left: 10vh;
 }
 
 .about_me .skill-item {
