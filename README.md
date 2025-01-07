@@ -1,4 +1,4 @@
-wacht : https://portfoliokevinbueno.netlify.app 
+wacht : https://portfoliokevinbueno.netlify.app/
 
 # Kevin's Portfolio
 
