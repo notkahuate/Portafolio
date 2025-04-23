@@ -169,6 +169,11 @@
     width: 100%;
     height: auto;
     z-index: 1;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
 }
 
 /* Services Section */
@@ -233,16 +238,32 @@
 }
 
 .project-card {
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
     position: relative;
     margin-bottom: 2rem;
-    border-radius: 8px;
-    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.project-card.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .project-card img {
     width: 100%;
     height: auto;
     display: block;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.project-card.visible img {
+    opacity: 1;
 }
 
 .project-overlay {
@@ -262,6 +283,18 @@
 
 .project-card:hover .project-overlay {
     opacity: 1;
+}
+
+.project-overlay h3 {
+    margin-bottom: 1rem;
+}
+
+.project-overlay p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #eee;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* Contact Section */
@@ -424,4 +457,46 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Transiciones suaves para los textos */
+.hero-text h1, .services h2, .project-overlay h3, .contact-form h2 {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-text h1:hover, .services h2:hover, .project-overlay h3:hover, .contact-form h2:hover {
+    color: #800080;
+    transform: scale(1.05);
+}
+
+/* Cambiar la tipografía para una apariencia más elegante */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Mejorar el efecto hover en las tarjetas de proyectos */
+.project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+}
+
+/* Efecto de hover en los íconos de habilidades */
+.about_me .skill-item:hover .skill-icon {
+    transform: scale(1.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #800080;
+}
+
+/* Animación de entrada para los íconos de habilidades */
+.about_me .skill-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about_me .skill-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
