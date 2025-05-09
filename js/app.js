@@ -47,3 +47,18 @@ document.addEventListener('DOMContentLoaded', function() {
         skillObserver.observe(item);
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const image = document.querySelector('.hero-image img');
+    const originalSrc = image.src;
+    const newSrc = 'img/WhatsApp Image 2025-05-09 at 1.12.06 PM.jpeg'; // Ruta de la nueva imagen
+
+    image.addEventListener('mouseover', function() {
+        image.src = newSrc;
+    });
+
+    image.addEventListener('mouseout', function() {
+        image.src = originalSrc;
+    });
+});
