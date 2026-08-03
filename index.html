@@ -1,216 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Portafolio de Kevin Bueno — desarrollador full stack. Vue, Nuxt, Strapi, Azure y más.">
+    <title>Kevin Bueno | Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/svg+xml" href="img/4c7c90787cd3cc107eabdc9afa94f529-removebg-preview.png" />
+    <script>
+        (function () {
+            var theme = localStorage.getItem('theme') || 'dark';
+            var lang = localStorage.getItem('lang') || 'es';
+            document.documentElement.setAttribute('data-theme', theme);
+            document.documentElement.setAttribute('lang', lang);
+        })();
+    </script>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Me<span>.</span></a>
+            <a href="#home" class="logo">Kevin<span>.</span></a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" data-i18n-aria="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
-                <a href="#home">HOME</a>
-                <a href="#services">SERVICES</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#About_ME">ABOUT ME</a>
-                <a href="#contact">CONTACT</a>
+                <a href="#home" data-i18n="nav.home">INICIO</a>
+                <a href="#services" data-i18n="nav.services">SERVICIOS</a>
+                <a href="#projects" data-i18n="nav.projects">PROYECTOS</a>
+                <a href="#About_ME" data-i18n="nav.skills">SKILLS</a>
+                <a href="#experience" data-i18n="nav.experience">EXPERIENCIA</a>
+                <a href="#contact" data-i18n="nav.contact">CONTACTO</a>
             </div>
-            <a href="https://wa.me/573162851135?text=Hola%20Kevin,%20me%20interesa%20hablar%20sobre%20un%20proyecto." target="_blank">
-                <button class="lets-talk">Let's Talk</button>
-            </a>
-            
+            <div class="nav-controls">
+                <button type="button" class="control-btn" id="lang-toggle" aria-label="Cambiar idioma">ES</button>
+                <button type="button" class="control-btn" id="theme-toggle" aria-label="Cambiar tema">☀️</button>
+                <a class="nav-cta" id="whatsapp-link" href="https://wa.me/573162851135?text=Hola%20Kevin,%20me%20interesa%20hablar%20sobre%20un%20proyecto." target="_blank" rel="noopener noreferrer">
+                    <button class="lets-talk" type="button" data-i18n="nav.talk">Hablemos</button>
+                </a>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-text">
-                <h1>I'm Kevin</h1>
-                <div class="dev-badge">I'M A DEVELOPER</div>
+                <p class="hero-kicker">Kevin Bueno</p>
+                <h1 data-i18n="hero.title">Soy Kevin</h1>
+                <div class="dev-badge" aria-live="polite" data-i18n="hero.badge">SOY DESARROLLADOR</div>
+                <p class="hero-lead" data-i18n="hero.lead">Desarrollador full stack. Construyo productos web con Vue, Nuxt, Strapi y Azure.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary" data-i18n="hero.projects">Ver proyectos</a>
+                    <a href="#contact" class="btn-secondary" data-i18n="hero.contact">Contactar</a>
+                </div>
                 <div class="stats">
                     <div class="stat-item">
                         <h3>11<span>+</span></h3>
-                        <p>Review</p>
+                        <p data-i18n="hero.statReviews">Reviews</p>
                     </div>
                     <div class="stat-item">
                         <h3>3<span>+</span></h3>
-                        <p>Years Experience</p>
+                        <p data-i18n="hero.statYears">Años de experiencia</p>
                     </div>
                     <div class="stat-item">
-                        <h3>6<span>+</span></h3>
-                        <p>Programming Languages</p>
+                        <h3>8<span>+</span></h3>
+                        <p data-i18n="hero.statTech">Tecnologías</p>
                     </div>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="img/WhatsApp_Image_2025-05-09_at_12.48.51_PM__1_-removebg-preview.png" alt="Profile Image">
+                <img src="img/WhatsApp_Image_2025-05-09_at_12.48.51_PM__1_-removebg-preview.png" alt="Kevin Bueno">
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section class="services" id="services">
         <div class="services-container">
-            <h2>Get a powerful website that delivers results with an all-in-one solution</h2>
+            <h2 data-i18n="services.title">Servicios que impulsan tu producto digital</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>WEB DESIGN</h3>
-                    <p>Design, develop, and create content for your website in one package.</p>
+                    <div class="service-icon">WD</div>
+                    <h3 data-i18n="services.webTitle">Diseño Web</h3>
+                    <p data-i18n="services.webDesc">Diseño y desarrollo de sitios claros, responsivos y listos para convertir visitantes en clientes.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">⛃</div>
-                    <h3>Create Database</h3>
-                    <p>creator and with knowledge in database management for its maintenance and good registration.</p>
+                    <div class="service-icon">DB</div>
+                    <h3 data-i18n="services.dbTitle">Bases de datos</h3>
+                    <p data-i18n="services.dbDesc">Modelado, administración y mantenimiento de bases de datos MySQL y PostgreSQL.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🛠️</div>
-                    <h3>Backend</h3>
-                    <p>backend knowledge with different languages ​​such as java javascript python and php.</p>
+                    <div class="service-icon">BE</div>
+                    <h3 data-i18n="services.beTitle">Backend</h3>
+                    <p data-i18n="services.beDesc">APIs y lógica de servidor con JavaScript, Java, Python, PHP y Strapi.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="projects-container">
+            <h2 class="section-title" data-i18n-html="projects.title">MIS <span>PROYECTOS</span></h2>
             <div class="project-card">
-                <img src="img\web.png" alt="Project 1">
+                <img src="img/web.png" alt="Website de comida">
                 <div class="project-overlay">
-                    <h3>Project Website food </h3>
-                    <p>ste proyecto es un sitio web dedicado a la presentación de un menú de comida. La interfaz está diseñada para ser atractiva y 
-                        fácil de usar, proporcionando a los visitantes información sobre diferentes platillos y servicios. El sitio incluye
-                         una barra de navegación que se adapta a diferentes tamaños de pantalla, 
-                        asegurando que la experiencia del usuario sea fluida en dispositivos móviles y de escritorio..
-                    </p>
-                   <a href="https://hamburgesasweb.netlify.app/"> <button class="lets-talk">View Project</button></a>
+                    <h3 data-i18n="projects.foodTitle">Website Food</h3>
+                    <p data-i18n="projects.foodDesc">Sitio para presentar un menú de comida, con interfaz clara y navegación responsive para móvil y escritorio.</p>
+                    <a href="https://hamburgesasweb.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <button class="lets-talk" type="button" data-i18n="projects.view">Ver proyecto</button>
+                    </a>
                 </div>
             </div>
             <div class="project-card">
-                <img src="img\image.png" alt="Project 2">
+                <img src="img/image.png" alt="Web de reservas de hotel">
                 <div class="project-overlay">
-                    <h3>Project Web reverse</h3>
-                    <p> Este proyecto es una página web diseñada para la gestión y reserva de hoteles. 
-                        , se muestran todas las opciones de hoteles disponibles en el momento.
-                         Cada hotel tiene su propia página de reserva, como reserve.html, donde los usuarios pueden ver la
-                          información detallada de cada hotel y completar su reserva. Cada reserva genera un ticket único 
-                          con un código QR asociado, que se utiliza para la validación de la reserva en el futuro.</p>
-                          <a href="https://yourhotelreserve.netlify.app"> <button class="lets-talk">View Project</button></a>
+                    <h3 data-i18n="projects.hotelTitle">Hotel Reserve</h3>
+                    <p data-i18n="projects.hotelDesc">Plataforma de reserva de hoteles con detalle por propiedad, ticket único y código QR para validar la reserva.</p>
+                    <a href="https://yourhotelreserve.netlify.app" target="_blank" rel="noopener noreferrer">
+                        <button class="lets-talk" type="button" data-i18n="projects.view">Ver proyecto</button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-
-<div class="about_me" id="About_ME">
-    <div class="container">
-        <h1 class="title">MY <span>SKILLS</span></h1>
-        
-        <div class="skills-grid">
-            <!-- Left Column -->
-            <div class="skills-column">
+    <section class="about_me" id="About_ME">
+        <div class="container">
+            <h2 class="title" data-i18n-html="skills.title">MIS <span>SKILLS</span></h2>
+            <div class="skills-grid">
                 <div class="skill-item">
-                    <img src="https://www.svgrepo.com/show/452228/html-5.svg" alt="HTML5" class="skill-icon">
+                    <img src="https://cdn.simpleicons.org/html5/E34F26" alt="" class="skill-icon">
                     <span class="skill-name">HTML</span>
                 </div>
-                
                 <div class="skill-item">
-                    <img src="https://www.svgrepo.com/show/452185/css-3.svg" alt="CSS3" class="skill-icon">
+                    <img src="https://cdn.simpleicons.org/css/663399" alt="" class="skill-icon">
                     <span class="skill-name">CSS</span>
                 </div>
-                
                 <div class="skill-item">
-                    <img src="https://www.svgrepo.com/show/452045/js.svg" alt="JavaScript" class="skill-icon">
+                    <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" class="skill-icon">
                     <span class="skill-name">JAVASCRIPT</span>
                 </div>
-                
                 <div class="skill-item">
-                    <img src="https://www.svgrepo.com/show/452091/python.svg" alt="Python" class="skill-icon">
+                    <img src="https://cdn.simpleicons.org/python/3776AB" alt="" class="skill-icon">
                     <span class="skill-name">PYTHON</span>
                 </div>
-                
                 <div class="skill-item">
-                    <img src="https://www.svgrepo.com/show/452234/java.svg" alt="Scrum" class="skill-icon">
+                    <img src="https://cdn.simpleicons.org/openjdk/ED8B00" alt="" class="skill-icon">
                     <span class="skill-name">JAVA</span>
                 </div>
-            </div>
-            
-            <!-- Right Column -->
-            <div class="skills-column">
                 <div class="skill-item">
-                    <img src="https://www.svgrepo.com/show/452210/git.svg" alt="Git" class="skill-icon">
+                    <img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="" class="skill-icon">
+                    <span class="skill-name">VUE</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.simpleicons.org/nuxt/00DC82" alt="" class="skill-icon">
+                    <span class="skill-name">NUXT</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.simpleicons.org/strapi/4945FF" alt="" class="skill-icon">
+                    <span class="skill-name">STRAPI</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftazure.svg" alt="" class="skill-icon skill-icon-azure">
+                    <span class="skill-name">AZURE</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.simpleicons.org/git/F05032" alt="" class="skill-icon">
                     <span class="skill-name">GIT</span>
                 </div>
-                
                 <div class="skill-item">
-                    <img src="https://www.svgrepo.com/show/373969/php2.svg" alt="Node.js" class="skill-icon">
+                    <img src="https://cdn.simpleicons.org/php/777BB4" alt="" class="skill-icon">
                     <span class="skill-name">PHP</span>
                 </div>
-                
                 <div class="skill-item">
-                    <img src="https://www.svgrepo.com/show/303301/postgresql-logo.svg" alt="Express" class="skill-icon">
-                    <span class="skill-name">PGADMIN</span>
+                    <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" class="skill-icon">
+                    <span class="skill-name">POSTGRESQL</span>
                 </div>
-                
                 <div class="skill-item">
-                    <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" alt="MongoDB" class="skill-icon">
+                    <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="" class="skill-icon">
                     <span class="skill-name">MYSQL</span>
                 </div>
-                
                 <div class="skill-item">
-                    <img src="https://www.svgrepo.com/show/439311/scrum.svg" alt="MySQL" class="skill-icon">
+                    <img src="https://cdn.simpleicons.org/scrumalliance/009FDA" alt="" class="skill-icon">
                     <span class="skill-name">SCRUM</span>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-</div>
-   
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="contact-container">
-            <div class="contact-form">
-                <h2>Let's Discuss Projects</h2>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea rows="5" placeholder="Your message"></textarea>
-                <button>Send Message</button>
-            </div>
-            <div class="contact-info">
-                <h2>Contact Info</h2>
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <p>+57 316 2851135</p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">✉️</div>
-                    <p>ksbuenors@gmail.com</p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <p>cr 8W # 61-18, Bucaramnga </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="experience" id="experience">
+        <div class="experience-container">
+            <h2 data-i18n-html="experience.title">MI <span>EXPERIENCIA</span></h2>
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <p class="experience-role" data-i18n="experience.role">Desarrollador de Software</p>
+                    <h3>Globant</h3>
+                    <p data-i18n="experience.globant">Desarrollo de soluciones digitales en equipo, aplicando buenas prácticas, metodologías ágiles y tecnologías web modernas.</p>
+                </article>
+                <article class="experience-card">
+                    <p class="experience-role" data-i18n="experience.role">Desarrollador de Software</p>
+                    <h3>Data Global</h3>
+                    <p data-i18n="experience.dataGlobal">Participación en proyectos de software orientados a datos y aplicaciones web, con foco en calidad, entrega y colaboración.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <form class="contact-form" id="contact-form" action="mailto:ksbuenors@gmail.com" method="post" enctype="text/plain">
+                <h2 data-i18n="contact.title">Hablemos de proyectos</h2>
+                <input type="text" name="name" data-i18n-placeholder="contact.name" placeholder="Nombre" required>
+                <input type="email" name="email" data-i18n-placeholder="contact.email" placeholder="Email" required>
+                <textarea name="message" rows="5" data-i18n-placeholder="contact.message" placeholder="Tu mensaje" required></textarea>
+                <button type="submit" data-i18n="contact.send">Enviar mensaje</button>
+            </form>
+            <div class="contact-info">
+                <h2 data-i18n="contact.info">Info de contacto</h2>
+                <div class="contact-item">
+                    <div class="contact-icon">Tel</div>
+                    <a href="tel:+573162851135">+57 316 2851135</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">Mail</div>
+                    <a href="mailto:ksbuenors@gmail.com">ksbuenors@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">Loc</div>
+                    <p>Cr 8W # 61-18, Bucaramanga</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-container">
-            <p>© 2024 Kevin. All rights reserved.</p>
+            <p data-i18n="footer.copy">© 2026 Kevin Bueno. Todos los derechos reservados.</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/ksbuenor/">IG</a>
-                <a href="https://github.com/notkahuate">GH</a>
+                <a href="https://www.instagram.com/ksbuenor/" target="_blank" rel="noopener noreferrer">IG</a>
+                <a href="https://github.com/notkahuate" target="_blank" rel="noopener noreferrer">GH</a>
             </div>
         </div>
     </footer>
