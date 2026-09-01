@@ -34,6 +34,11 @@
                 <a href="#projects" data-i18n="nav.projects">PROYECTOS</a>
                 <a href="#About_ME" data-i18n="nav.skills">SKILLS</a>
                 <a href="#experience" data-i18n="nav.experience">EXPERIENCIA</a>
+                <a href="#languages" data-i18n="nav.languages">IDIOMAS</a>
+                <a href="#education" data-i18n="nav.education">ESTUDIOS</a>
+                <a href="#books" data-i18n="nav.books">LIBROS</a>
+                <a href="#music" data-i18n="nav.music">MÚSICA</a>
+                <a href="#sports" data-i18n="nav.sports">DEPORTES</a>
                 <a href="#contact" data-i18n="nav.contact">CONTACTO</a>
             </div>
             <div class="nav-controls">
@@ -78,7 +83,7 @@
         </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="services anim-section" id="services" data-anim="fan">
         <div class="services-container">
             <h2 data-i18n="services.title">Servicios que impulsan tu producto digital</h2>
             <div class="services-grid">
@@ -101,7 +106,7 @@
         </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects anim-section" id="projects" data-anim="wipe">
         <div class="projects-container">
             <h2 class="section-title" data-i18n-html="projects.title">MIS <span>PROYECTOS</span></h2>
             <div class="project-card">
@@ -127,7 +132,7 @@
         </div>
     </section>
 
-    <section class="about_me" id="About_ME">
+    <section class="about_me anim-section" id="About_ME" data-anim="orbit">
         <div class="container">
             <h2 class="title" data-i18n-html="skills.title">MIS <span>SKILLS</span></h2>
             <div class="skills-grid">
@@ -191,16 +196,18 @@
         </div>
     </section>
 
-    <section class="experience" id="experience">
+    <section class="experience anim-section" id="experience" data-anim="skew">
         <div class="experience-container">
             <h2 data-i18n-html="experience.title">MI <span>EXPERIENCIA</span></h2>
             <div class="experience-grid">
                 <article class="experience-card">
+                    <p class="experience-date" data-i18n="experience.globantDate">Junio 2025 — Diciembre 2025</p>
                     <p class="experience-role" data-i18n="experience.role">Desarrollador de Software</p>
                     <h3>Globant</h3>
                     <p data-i18n="experience.globant">Desarrollo de soluciones digitales en equipo, aplicando buenas prácticas, metodologías ágiles y tecnologías web modernas.</p>
                 </article>
                 <article class="experience-card">
+                    <p class="experience-date" data-i18n="experience.dataGlobalDate">Abril 2025 — Presente</p>
                     <p class="experience-role" data-i18n="experience.role">Desarrollador de Software</p>
                     <h3>Data Global</h3>
                     <p data-i18n="experience.dataGlobal">Participación en proyectos de software orientados a datos y aplicaciones web, con foco en calidad, entrega y colaboración.</p>
@@ -209,7 +216,204 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="languages anim-section" id="languages" data-anim="bloom">
+        <div class="languages-container">
+            <h2 data-i18n-html="languages.title">MIS <span>IDIOMAS</span></h2>
+            <div class="languages-grid">
+                <article class="language-card">
+                    <h3 data-i18n="languages.english">Inglés</h3>
+                    <p class="language-note" data-i18n="languages.englishStatus">Actualmente soy estudiante de inglés.</p>
+                    <ul class="language-levels">
+                        <li><span data-i18n="languages.reading">Lectura</span>: <strong>B1+</strong></li>
+                        <li><span data-i18n="languages.speaking">Habla</span>: <strong>B1</strong></li>
+                        <li><span data-i18n="languages.writing">Escritura</span>: <strong>B1</strong></li>
+                    </ul>
+                </article>
+                <article class="language-card">
+                    <h3 data-i18n="languages.french">Francés</h3>
+                    <p class="language-note" data-i18n="languages.frenchStatus">Lo inicié recientemente. Estudio en Smart Academy.</p>
+                    <ul class="language-levels">
+                        <li data-i18n="languages.frenchLevel">Nivel: principiante / inicio</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="education anim-section" id="education" data-anim="stack">
+        <div class="education-container">
+            <h2 data-i18n-html="education.title">MIS <span>ESTUDIOS</span></h2>
+            <div class="education-grid">
+                <article class="education-card">
+                    <p class="education-date">2023 — <span data-i18n="education.present">Presente</span></p>
+                    <h3>UTS</h3>
+                    <p class="education-program" data-i18n="education.utsProgram">Ingeniería de Sistemas</p>
+                    <p data-i18n="education.utsDesc">Universidad — Unidades Tecnológicas de Santander.</p>
+                </article>
+                <article class="education-card">
+                    <p class="education-date" data-i18n="education.current">Actual</p>
+                    <h3>Smart Academy</h3>
+                    <p class="education-program" data-i18n="education.smartProgram">Inglés y Francés</p>
+                    <p data-i18n="education.smartDesc">Formación en idiomas: inglés (estudiante actual) y francés (inicio reciente).</p>
+                </article>
+                <article class="education-card">
+                    <p class="education-date">2024 — 2025</p>
+                    <h3>Campuslands</h3>
+                    <p class="education-program" data-i18n="education.campusProgram">Formación en desarrollo de software</p>
+                    <p data-i18n="education.campusDesc">Programa de formación tecnológica en desarrollo de software.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="life-section books-section anim-section" id="books" data-anim="swing">
+        <div class="life-container">
+            <div class="life-intro">
+                <p class="about-life-kicker" data-i18n="about.booksTag">Estantería</p>
+                <h2 data-i18n-html="about.booksSectionTitle">MIS <span>LIBROS</span></h2>
+                <p class="about-life-lead" data-i18n="about.booksDesc">De magia, realismo y hábitos: mi mix de lectura favorito.</p>
+            </div>
+            <div class="about-panel about-panel-books life-panel life-panel-books">
+                <div class="book-carousel" id="book-carousel">
+                    <button type="button" class="book-nav book-prev" aria-label="Anterior">‹</button>
+                    <div class="book-stage">
+                        <div class="book-cover is-active" data-index="0">
+                            <img src="img/about/harry-potter.png" alt="Harry Potter y la piedra filosofal">
+                            <span>Harry Potter</span>
+                        </div>
+                        <div class="book-cover" data-index="1">
+                            <img src="img/about/amor-colera.png" alt="El amor en los tiempos del cólera">
+                            <span data-i18n="about.bookCholera">Amor en los tiempos del cólera</span>
+                        </div>
+                        <div class="book-cover" data-index="2">
+                            <img src="img/about/padre-rico.png" alt="Padre Rico Padre Pobre">
+                            <span data-i18n="about.bookRichDad">Padre Rico, Padre Pobre</span>
+                        </div>
+                        <div class="book-cover" data-index="3">
+                            <img src="img/about/habitos-atomicos.png" alt="Hábitos atómicos">
+                            <span data-i18n="about.bookHabits">Hábitos Atómicos</span>
+                        </div>
+                        <div class="book-cover" data-index="4">
+                            <img src="img/about/agartha.png" alt="El Mensajero de Agartha - Zombies">
+                            <span data-i18n="about.bookAgartha">El Mensajero de Agartha</span>
+                        </div>
+                        <div class="book-cover" data-index="5">
+                            <img src="img/about/babilonia.png" alt="El Hombre Más Rico de Babilonia">
+                            <span data-i18n="about.bookBabilonia">El Hombre Más Rico de Babilonia</span>
+                        </div>
+                    </div>
+                    <button type="button" class="book-nav book-next" aria-label="Siguiente">›</button>
+                    <div class="book-dots" id="book-dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="life-section music-section anim-section" id="music" data-anim="vinyl">
+        <div class="life-container">
+            <div class="life-intro">
+                <p class="about-life-kicker" data-i18n="about.musicTag">Now playing</p>
+                <h2 data-i18n-html="about.musicSectionTitle">MI <span>MÚSICA</span></h2>
+                <p class="about-life-lead" data-i18n="about.musicDesc">Del dream pop a la calle: mi soundtrack del día a día.</p>
+            </div>
+            <div class="vinyl-deck vinyl-deck-wide">
+                <div class="vinyl-item is-playing" data-artist="lana">
+                    <div class="vinyl-disc vinyl-disc-lg">
+                        <div class="vinyl-grooves"></div>
+                        <img src="img/about/lana-del-rey.png" alt="Lana Del Rey - Born to Die" class="vinyl-label">
+                        <div class="vinyl-arm" aria-hidden="true"></div>
+                    </div>
+                    <div class="vinyl-meta">
+                        <h4>Lana Del Rey</h4>
+                        <p data-i18n="about.lanaVibe">Melancolía cinematográfica</p>
+                    </div>
+                </div>
+                <div class="vinyl-item" data-artist="feid">
+                    <div class="vinyl-disc vinyl-disc-lg">
+                        <div class="vinyl-grooves"></div>
+                        <img src="img/about/feid.png" alt="Feid - Inter Shibuya" class="vinyl-label">
+                        <div class="vinyl-arm" aria-hidden="true"></div>
+                    </div>
+                    <div class="vinyl-meta">
+                        <h4>Feid</h4>
+                        <p data-i18n="about.feidVibe">Reggaetón fresco y urbano</p>
+                    </div>
+                </div>
+                <div class="vinyl-item" data-artist="omar">
+                    <div class="vinyl-disc vinyl-disc-lg">
+                        <div class="vinyl-grooves"></div>
+                        <img src="img/about/omar-courtz.png" alt="Omar Courtz" class="vinyl-label">
+                        <div class="vinyl-arm" aria-hidden="true"></div>
+                    </div>
+                    <div class="vinyl-meta">
+                        <h4>Omar Courtz</h4>
+                        <p data-i18n="about.omarVibe">Flow suave, vibes fuertes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="life-section sports-section anim-section" id="sports" data-anim="arena">
+        <div class="life-container">
+            <div class="life-intro">
+                <p class="about-life-kicker" data-i18n="about.sportsTag">En movimiento</p>
+                <h2 data-i18n-html="about.sportsSectionTitle">MIS <span>DEPORTES</span></h2>
+                <p class="about-life-lead" data-i18n="about.sportsDesc">Me gusta moverme: disciplina, adrenalina y juego en equipo.</p>
+            </div>
+
+            <div class="sports-arena">
+                <article class="sport-featured" id="sport-featured">
+                    <img id="sport-featured-img" src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=1400&q=80" alt="Tenis">
+                    <div class="sport-featured-shine"></div>
+                    <div class="sport-featured-body">
+                        <span class="sport-featured-index" id="sport-featured-index">01</span>
+                        <h3 id="sport-featured-title" data-i18n="about.tennis">Tenis</h3>
+                        <p id="sport-featured-desc" data-i18n="about.tennisDesc">Precisión, ritmo y foco en cada punto.</p>
+                    </div>
+                </article>
+
+                <div class="sports-thumbs" id="sports-thumbs">
+                    <button type="button" class="sport-thumb is-active" data-sport="0">
+                        <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=400&q=80" alt="">
+                        <span data-i18n="about.tennis">Tenis</span>
+                    </button>
+                    <button type="button" class="sport-thumb" data-sport="1">
+                        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=400&q=80" alt="">
+                        <span data-i18n="about.boxing">Boxeo</span>
+                    </button>
+                    <button type="button" class="sport-thumb" data-sport="2">
+                        <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?auto=format&fit=crop&w=400&q=80" alt="">
+                        <span data-i18n="about.tableTennis">Tenis de mesa</span>
+                    </button>
+                    <button type="button" class="sport-thumb" data-sport="3">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=400&q=80" alt="">
+                        <span data-i18n="about.football">Fútbol</span>
+                    </button>
+                    <button type="button" class="sport-thumb" data-sport="4">
+                        <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=400&q=80" alt="">
+                        <span data-i18n="about.taekwondo">Taekwondo</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="section-dots" aria-label="Secciones">
+        <a href="#home" data-dot="home" title="Home"></a>
+        <a href="#services" data-dot="services" title="Services"></a>
+        <a href="#projects" data-dot="projects" title="Projects"></a>
+        <a href="#About_ME" data-dot="About_ME" title="Skills"></a>
+        <a href="#experience" data-dot="experience" title="Experience"></a>
+        <a href="#languages" data-dot="languages" title="Languages"></a>
+        <a href="#education" data-dot="education" title="Education"></a>
+        <a href="#books" data-dot="books" title="Books"></a>
+        <a href="#music" data-dot="music" title="Music"></a>
+        <a href="#sports" data-dot="sports" title="Sports"></a>
+        <a href="#contact" data-dot="contact" title="Contact"></a>
+    </nav>
+
+    <section class="contact anim-section" id="contact" data-anim="split">
         <div class="contact-container">
             <form class="contact-form" id="contact-form" action="mailto:ksbuenors@gmail.com" method="post" enctype="text/plain">
                 <h2 data-i18n="contact.title">Hablemos de proyectos</h2>
