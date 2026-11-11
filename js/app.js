@@ -29,10 +29,24 @@ const translations = {
         'services.beTitle': 'Backend',
         'services.beDesc': 'APIs y lógica de servidor con JavaScript, Java, Python, PHP y Strapi.',
         'projects.title': 'MIS <span>PROYECTOS</span>',
+        'projects.lead': 'Sitios, portales y automatizaciones con los que ya trabajo.',
         'projects.foodTitle': 'Website Food',
         'projects.foodDesc': 'Sitio para presentar un menú de comida, con interfaz clara y navegación responsive para móvil y escritorio.',
         'projects.hotelTitle': 'Hotel Reserve',
         'projects.hotelDesc': 'Plataforma de reserva de hoteles con detalle por propiedad, ticket único y código QR para validar la reserva.',
+        'projects.armyTitle': 'Liceos del Ejército',
+        'projects.armyDesc': 'Portal de los Liceos del Ejército con carnet digital, accesos rápidos y una portada pensada para estudiantes y familias.',
+        'projects.armyTag': 'Institucional',
+        'projects.botTitle': 'Agente virtual Emily',
+        'projects.botDesc': 'Chatbot de los Liceos del Ejército creado con n8n. Emily abre con un saludo, ofrece un menú de opciones y también responde preguntas libres.',
+        'projects.tagMenu': 'Menú',
+        'projects.tagResponsive': 'Responsive',
+        'projects.tagBooking': 'Reservas',
+        'projects.tagPortal': 'Portal',
+        'projects.tagId': 'Carnet digital',
+        'projects.tagChat': 'Chatbot',
+        'projects.custom': 'Proyecto a medida',
+        'projects.automation': 'Automatización',
         'projects.view': 'Ver proyecto',
         'skills.title': 'MIS <span>SKILLS</span>',
         'experience.title': 'MI <span>EXPERIENCIA</span>',
@@ -66,18 +80,32 @@ const translations = {
         'about.booksSectionTitle': 'MIS <span>LIBROS</span>',
         'about.booksTitle': 'Libros que me marcan',
         'about.booksDesc': 'De magia, realismo y hábitos: mi mix de lectura favorito.',
+        'about.bookHarry': 'Harry Potter',
         'about.bookCholera': 'Amor en los tiempos del cólera',
         'about.bookRichDad': 'Padre Rico, Padre Pobre',
         'about.bookHabits': 'Hábitos Atómicos',
         'about.bookAgartha': 'El Mensajero de Agartha',
         'about.bookBabilonia': 'El Hombre Más Rico de Babilonia',
+        'about.genreFantasy': 'Fantasía',
+        'about.genreRealism': 'Realismo mágico',
+        'about.genreFinance': 'Finanzas',
+        'about.genreHabits': 'Hábitos',
+        'about.genreAdventure': 'Aventura',
+        'about.noteHarry': 'El inicio de la saga. Lo releo cuando quiero volver a esa sensación de descubrimiento.',
+        'about.noteCholera': 'Una historia de amor que se toma su tiempo, con el ritmo del realismo mágico.',
+        'about.noteRich': 'Una forma directa de pensar el dinero, el trabajo y las decisiones.',
+        'about.noteHabits': 'Cambios pequeños, repetidos, que terminan moviendo el día entero.',
+        'about.noteAgartha': 'Misterio y aventura con un ritmo que engancha de principio a fin.',
+        'about.noteBabilonia': 'Fábulas cortas sobre ahorro, trabajo y constancia.',
         'about.bookGreg': 'El diario de Greg',
         'about.bookCien': 'Cien años de soledad',
         'about.bookPrincipito': 'El Principito',
-        'about.musicTag': 'Now playing',
+        'about.musicTag': 'Sonando',
         'about.musicSectionTitle': 'MI <span>MÚSICA</span>',
         'about.musicTitle': 'Música en repeat',
         'about.musicDesc': 'Del dream pop a la calle: mi soundtrack del día a día.',
+        'about.nowPlaying': 'Sonando ahora',
+        'about.queue': 'En la fila',
         'about.lanaVibe': 'Melancolía cinematográfica',
         'about.feidVibe': 'Reggaetón fresco y urbano',
         'about.omarVibe': 'Flow suave, vibes fuertes',
@@ -140,10 +168,24 @@ const translations = {
         'services.beTitle': 'Backend',
         'services.beDesc': 'APIs and server-side logic with JavaScript, Java, Python, PHP and Strapi.',
         'projects.title': 'MY <span>PROJECTS</span>',
+        'projects.lead': 'Sites, portals and automations I already ship.',
         'projects.foodTitle': 'Website Food',
         'projects.foodDesc': 'A site to present a food menu, with a clear UI and responsive navigation for mobile and desktop.',
         'projects.hotelTitle': 'Hotel Reserve',
         'projects.hotelDesc': 'Hotel booking platform with property details, unique tickets and QR codes to validate reservations.',
+        'projects.armyTitle': 'Liceos del Ejército',
+        'projects.armyDesc': 'Portal for Liceos del Ejército with a digital student ID, quick links and a homepage built for students and families.',
+        'projects.armyTag': 'Institutional',
+        'projects.botTitle': 'Emily virtual agent',
+        'projects.botDesc': 'Chatbot for Liceos del Ejército built with n8n. Emily opens with a greeting, offers an options menu and also answers free questions.',
+        'projects.tagMenu': 'Menu',
+        'projects.tagResponsive': 'Responsive',
+        'projects.tagBooking': 'Bookings',
+        'projects.tagPortal': 'Portal',
+        'projects.tagId': 'Digital ID',
+        'projects.tagChat': 'Chatbot',
+        'projects.custom': 'Custom project',
+        'projects.automation': 'Automation',
         'projects.view': 'View Project',
         'skills.title': 'MY <span>SKILLS</span>',
         'experience.title': 'MY <span>EXPERIENCE</span>',
@@ -177,11 +219,23 @@ const translations = {
         'about.booksSectionTitle': 'MY <span>BOOKS</span>',
         'about.booksTitle': 'Books that shaped me',
         'about.booksDesc': 'From magic and realism to habits: my favorite reading mix.',
+        'about.bookHarry': 'Harry Potter',
         'about.bookCholera': 'Love in the Time of Cholera',
         'about.bookRichDad': 'Rich Dad Poor Dad',
         'about.bookHabits': 'Atomic Habits',
         'about.bookAgartha': 'The Messenger of Agartha',
         'about.bookBabilonia': 'The Richest Man in Babylon',
+        'about.genreFantasy': 'Fantasy',
+        'about.genreRealism': 'Magical realism',
+        'about.genreFinance': 'Finance',
+        'about.genreHabits': 'Habits',
+        'about.genreAdventure': 'Adventure',
+        'about.noteHarry': 'The start of the saga. I reread it when I want that feeling of discovery again.',
+        'about.noteCholera': 'A love story that takes its time, told at the pace of magical realism.',
+        'about.noteRich': 'A direct way to think about money, work and decisions.',
+        'about.noteHabits': 'Small changes, repeated, that end up moving the whole day.',
+        'about.noteAgartha': 'Mystery and adventure with a pace that pulls you in from the first page.',
+        'about.noteBabilonia': 'Short fables about saving, work and consistency.',
         'about.bookGreg': 'Diary of a Wimpy Kid',
         'about.bookCien': 'One Hundred Years of Solitude',
         'about.bookPrincipito': 'The Little Prince',
@@ -189,6 +243,8 @@ const translations = {
         'about.musicSectionTitle': 'MY <span>MUSIC</span>',
         'about.musicTitle': 'Music on repeat',
         'about.musicDesc': 'From dream pop to the street: my everyday soundtrack.',
+        'about.nowPlaying': 'Now playing',
+        'about.queue': 'In the queue',
         'about.lanaVibe': 'Cinematic melancholy',
         'about.feidVibe': 'Fresh urban reggaeton',
         'about.omarVibe': 'Smooth flow, strong vibes',
@@ -281,6 +337,7 @@ document.addEventListener('DOMContentLoaded', function () {
         badgeText = dict['hero.badge'];
         restartTypeEffect();
         updateThemeButton();
+        document.dispatchEvent(new CustomEvent('portfolio:lang', { detail: { lang: lang } }));
     }
 
     function updateThemeButton() {
@@ -344,7 +401,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (themeToggle) {
         themeToggle.addEventListener('click', function () {
-            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+            const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (!document.startViewTransition || reduceMotion) {
+                setTheme(nextTheme);
+                return;
+            }
+            // Circular reveal of the new theme, centered on the toggle
+            const rect = themeToggle.getBoundingClientRect();
+            const x = rect.left + rect.width / 2;
+            const y = rect.top + rect.height / 2;
+            const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+            const transition = document.startViewTransition(function () {
+                setTheme(nextTheme);
+            });
+            transition.ready.then(function () {
+                document.documentElement.animate(
+                    { clipPath: ['circle(0px at ' + x + 'px ' + y + 'px)', 'circle(' + radius + 'px at ' + x + 'px ' + y + 'px)'] },
+                    { duration: 700, easing: 'cubic-bezier(0.22, 1, 0.36, 1)', pseudoElement: '::view-transition-new(root)' }
+                );
+            });
         });
     }
 
@@ -379,6 +455,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function announceSection(down) {
+        document.dispatchEvent(new CustomEvent('portfolio:section', {
+            detail: { index: sectionIndex, id: sectionIds[sectionIndex], total: sections.length, down: down }
+        }));
+    }
+
     function triggerSectionAnim(section) {
         if (!section || !section.classList.contains('anim-section')) return;
         section.classList.remove('is-in');
@@ -408,6 +490,7 @@ document.addEventListener('DOMContentLoaded', function () {
         triggerSectionAnim(next);
         sectionIndex = nextIndex;
         updateActiveDot();
+        announceSection(goingDown);
 
         if (history.replaceState) {
             history.replaceState(null, '', '#' + sectionIds[sectionIndex]);
@@ -453,6 +536,8 @@ document.addEventListener('DOMContentLoaded', function () {
     sectionIndex = startIndex;
     updateActiveDot();
     triggerSectionAnim(sections[sectionIndex]);
+    // effects.js loads after this script; let it subscribe before the first announcement
+    setTimeout(function () { announceSection(true); }, 0);
 
     let wheelLock = false;
     window.addEventListener('wheel', function (event) {
@@ -634,11 +719,83 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // Project carousel
+    const projectSlides = Array.from(document.querySelectorAll('.project-slide'));
+    const projectDots = document.getElementById('project-dots');
+    const projectPrev = document.querySelector('.project-prev');
+    const projectNext = document.querySelector('.project-next');
+    let projectIndex = 0;
+    let projectTimer = null;
+
+    function renderProjectDots() {
+        if (!projectDots) return;
+        projectDots.innerHTML = '';
+        projectSlides.forEach(function (_, i) {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.setAttribute('aria-label', 'Proyecto ' + (i + 1));
+            if (i === projectIndex) btn.classList.add('active');
+            btn.addEventListener('click', function () {
+                projectIndex = i;
+                updateProjects();
+                restartProjectTimer();
+            });
+            projectDots.appendChild(btn);
+        });
+    }
+
+    function updateProjects() {
+        projectSlides.forEach(function (slide, i) {
+            slide.classList.toggle('is-active', i === projectIndex);
+        });
+        renderProjectDots();
+    }
+
+    function restartProjectTimer() {
+        if (projectTimer) clearInterval(projectTimer);
+        renderProjectDots();
+        projectTimer = setInterval(function () {
+            projectIndex = (projectIndex + 1) % projectSlides.length;
+            updateProjects();
+        }, 5600);
+    }
+
+    if (projectSlides.length) {
+        updateProjects();
+        restartProjectTimer();
+        if (projectPrev) {
+            projectPrev.addEventListener('click', function () {
+                projectIndex = (projectIndex - 1 + projectSlides.length) % projectSlides.length;
+                updateProjects();
+                restartProjectTimer();
+            });
+        }
+        if (projectNext) {
+            projectNext.addEventListener('click', function () {
+                projectIndex = (projectIndex + 1) % projectSlides.length;
+                updateProjects();
+                restartProjectTimer();
+            });
+        }
+        const projectCarousel = document.getElementById('project-carousel');
+        if (projectCarousel) {
+            projectCarousel.addEventListener('mouseenter', function () {
+                if (projectTimer) clearInterval(projectTimer);
+            });
+            projectCarousel.addEventListener('mouseleave', restartProjectTimer);
+        }
+    }
+
     // Book cover carousel
     const bookCovers = Array.from(document.querySelectorAll('.book-cover'));
     const bookDots = document.getElementById('book-dots');
     const bookPrev = document.querySelector('.book-prev');
     const bookNext = document.querySelector('.book-next');
+    const bookTitle = document.getElementById('book-title');
+    const bookAuthor = document.getElementById('book-author');
+    const bookGenre = document.getElementById('book-genre');
+    const bookNote = document.getElementById('book-note');
+    const bookCount = document.getElementById('book-count');
     let bookIndex = 0;
     let bookTimer = null;
 
@@ -661,6 +818,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateBooks() {
         const total = bookCovers.length;
+        const dict = translations[currentLang];
         bookCovers.forEach(function (cover, i) {
             cover.classList.remove('is-active', 'is-prev', 'is-next');
             if (i === bookIndex) {
@@ -671,6 +829,25 @@ document.addEventListener('DOMContentLoaded', function () {
                 cover.classList.add('is-next');
             }
         });
+        const active = bookCovers[bookIndex];
+        if (active) {
+            if (bookTitle) bookTitle.textContent = dict[active.dataset.titleKey] || '';
+            if (bookAuthor) {
+                bookAuthor.textContent = active.dataset.author || '';
+                bookAuthor.hidden = !active.dataset.author;
+            }
+            if (bookGenre) bookGenre.textContent = dict[active.dataset.genreKey] || '';
+            if (bookNote) bookNote.textContent = dict[active.dataset.noteKey] || '';
+            if (bookCount) {
+                bookCount.textContent = String(bookIndex + 1).padStart(2, '0') + ' / ' + String(total).padStart(2, '0');
+            }
+            const bookDetail = document.getElementById('book-detail');
+            if (bookDetail) {
+                bookDetail.classList.remove('is-swap');
+                void bookDetail.offsetWidth;
+                bookDetail.classList.add('is-swap');
+            }
+        }
         renderBookDots();
     }
 
@@ -701,27 +878,56 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Vinyl player toggle
-    document.querySelectorAll('.vinyl-item').forEach(function (item) {
-        item.addEventListener('click', function () {
-            document.querySelectorAll('.vinyl-item').forEach(function (el) {
-                el.classList.remove('is-playing');
-            });
-            item.classList.add('is-playing');
+    const musicTracks = Array.from(document.querySelectorAll('.music-queue .track'));
+    const musicLabel = document.getElementById('music-label');
+    const musicArtist = document.getElementById('music-artist');
+    const musicAlbum = document.getElementById('music-album');
+    const musicVibe = document.getElementById('music-vibe');
+    const musicDisc = document.getElementById('music-disc');
+
+    function updateMusic(track) {
+        const current = track || document.querySelector('.music-queue .track.is-playing') || musicTracks[0];
+        if (!current) return;
+        const dict = translations[currentLang];
+        musicTracks.forEach(function (item) {
+            item.classList.toggle('is-playing', item === current);
+        });
+        if (musicLabel) {
+            musicLabel.src = current.dataset.src;
+            musicLabel.alt = current.dataset.artist;
+        }
+        if (musicArtist) musicArtist.textContent = current.dataset.artist || '';
+        if (musicAlbum) {
+            musicAlbum.textContent = current.dataset.album || '';
+            musicAlbum.hidden = !current.dataset.album;
+        }
+        if (musicVibe) musicVibe.textContent = dict[current.dataset.vibeKey] || '';
+        const musicPanel = document.querySelector('.music-panel');
+        if (musicPanel) {
+            musicPanel.classList.remove('is-swap');
+            void musicPanel.offsetWidth;
+            musicPanel.classList.add('is-swap');
+        }
+        if (musicDisc) {
+            musicDisc.classList.remove('is-spinning');
+            void musicDisc.offsetWidth;
+            musicDisc.classList.add('is-spinning');
+        }
+    }
+
+    musicTracks.forEach(function (track) {
+        track.addEventListener('click', function () {
+            updateMusic(track);
         });
     });
+    if (musicTracks.length) updateMusic(musicTracks[0]);
 
-    const image = document.querySelector('.hero-image img');
-    if (image) {
-        const originalSrc = image.src;
-        const newSrc = 'img/WhatsApp Image 2025-05-09 at 1.12.06 PM.jpeg';
-
-        image.addEventListener('mouseover', function () {
-            image.src = newSrc;
-        });
-
-        image.addEventListener('mouseout', function () {
-            image.src = originalSrc;
+    if (langToggle) {
+        langToggle.addEventListener('click', function () {
+            setTimeout(function () {
+                updateBooks();
+                updateMusic();
+            }, 20);
         });
     }
 

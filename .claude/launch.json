@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portafolio",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["C:/Users/kbuen/AppData/Local/Temp/claude/9331fc9de615dbc8/ad53526c-f67a-47d6-9a4e-299f63e0f2ec/scratchpad/serve.js", ".", "5510"],
+      "port": 5510
+    }
+  ]
+}
