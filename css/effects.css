@@ -18,6 +18,13 @@
     justify-content: safe center;
 }
 
+/* .life-section sets overflow: hidden, which clipped tall books/music/sports
+   content and left the wheel handler stuck waiting for a scroll that never happens */
+.page-section.life-section {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 /* Preloader */
 .preloader {
     position: fixed;
@@ -815,6 +822,42 @@ html[data-theme="dark"] .service-icon {
 
 .project-visual:not(.project-visual-ui):hover img {
     object-position: bottom center;
+}
+
+/* Wide desktop screenshots: show the whole screen inside a framed panel instead of cropping */
+.project-visual-shot {
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    background:
+        radial-gradient(circle at 30% 20%, rgba(168, 85, 247, 0.25), transparent 60%),
+        #0e0c16;
+}
+
+.project-visual-shot img,
+.project-visual:not(.project-visual-ui).project-visual-shot:hover img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.7);
+}
+
+.project-badge.is-wip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-badge.is-wip::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
 }
 
 .project-slide.is-active .project-copy > * {

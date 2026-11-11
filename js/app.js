@@ -30,18 +30,17 @@ const translations = {
         'services.beDesc': 'APIs y lógica de servidor con JavaScript, Java, Python, PHP y Strapi.',
         'projects.title': 'MIS <span>PROYECTOS</span>',
         'projects.lead': 'Sitios, portales y automatizaciones con los que ya trabajo.',
-        'projects.foodTitle': 'Website Food',
-        'projects.foodDesc': 'Sitio para presentar un menú de comida, con interfaz clara y navegación responsive para móvil y escritorio.',
-        'projects.hotelTitle': 'Hotel Reserve',
-        'projects.hotelDesc': 'Plataforma de reserva de hoteles con detalle por propiedad, ticket único y código QR para validar la reserva.',
+        'projects.agoraDesc': 'Plataforma de cumplimiento: un hub único para documentos, auditorías y trazabilidad de cambios, con acceso según el rol (super admin, auditor o usuario).',
+        'projects.ingproDesc': 'Tienda en línea de equipos de medición industrial, herramientas y soluciones técnicas, con búsqueda por SKU, marca o departamento, cuenta de usuario y carrito.',
+        'projects.tagCompliance': 'Cumplimiento',
+        'projects.tagAudits': 'Auditorías',
+        'projects.tagIndustrial': 'Industrial',
+        'projects.wip': 'En construcción',
         'projects.armyTitle': 'Liceos del Ejército',
         'projects.armyDesc': 'Portal de los Liceos del Ejército con carnet digital, accesos rápidos y una portada pensada para estudiantes y familias.',
         'projects.armyTag': 'Institucional',
         'projects.botTitle': 'Agente virtual Emily',
         'projects.botDesc': 'Chatbot de los Liceos del Ejército creado con n8n. Emily abre con un saludo, ofrece un menú de opciones y también responde preguntas libres.',
-        'projects.tagMenu': 'Menú',
-        'projects.tagResponsive': 'Responsive',
-        'projects.tagBooking': 'Reservas',
         'projects.tagPortal': 'Portal',
         'projects.tagId': 'Carnet digital',
         'projects.tagChat': 'Chatbot',
@@ -169,18 +168,17 @@ const translations = {
         'services.beDesc': 'APIs and server-side logic with JavaScript, Java, Python, PHP and Strapi.',
         'projects.title': 'MY <span>PROJECTS</span>',
         'projects.lead': 'Sites, portals and automations I already ship.',
-        'projects.foodTitle': 'Website Food',
-        'projects.foodDesc': 'A site to present a food menu, with a clear UI and responsive navigation for mobile and desktop.',
-        'projects.hotelTitle': 'Hotel Reserve',
-        'projects.hotelDesc': 'Hotel booking platform with property details, unique tickets and QR codes to validate reservations.',
+        'projects.agoraDesc': 'Compliance platform: a single hub for documents, audits and change tracking, with role-based access (super admin, auditor or user).',
+        'projects.ingproDesc': 'Online store for industrial measurement equipment, tools and technical solutions, with search by SKU, brand or department, user accounts and a cart.',
+        'projects.tagCompliance': 'Compliance',
+        'projects.tagAudits': 'Audits',
+        'projects.tagIndustrial': 'Industrial',
+        'projects.wip': 'In progress',
         'projects.armyTitle': 'Liceos del Ejército',
         'projects.armyDesc': 'Portal for Liceos del Ejército with a digital student ID, quick links and a homepage built for students and families.',
         'projects.armyTag': 'Institutional',
         'projects.botTitle': 'Emily virtual agent',
         'projects.botDesc': 'Chatbot for Liceos del Ejército built with n8n. Emily opens with a greeting, offers an options menu and also answers free questions.',
-        'projects.tagMenu': 'Menu',
-        'projects.tagResponsive': 'Responsive',
-        'projects.tagBooking': 'Bookings',
         'projects.tagPortal': 'Portal',
         'projects.tagId': 'Digital ID',
         'projects.tagChat': 'Chatbot',
@@ -507,6 +505,9 @@ document.addEventListener('DOMContentLoaded', function () {
         let node = el;
         while (node && node !== document.body) {
             if (node.classList && node.classList.contains('page-section') && node.classList.contains('is-active')) {
+                // A section that can't actually scroll must never swallow the wheel
+                const sectionOverflow = window.getComputedStyle(node).overflowY;
+                if (sectionOverflow !== 'auto' && sectionOverflow !== 'scroll') return false;
                 const atTop = node.scrollTop <= 0;
                 const atBottom = node.scrollTop + node.clientHeight >= node.scrollHeight - 2;
                 if (deltaY < 0 && !atTop) return true;
